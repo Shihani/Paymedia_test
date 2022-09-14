@@ -58,21 +58,27 @@ class UserController extends Controller
 
    $membership_cost=0;
    $membership=$value['membership'];
+   $membership_value=0;
    if($membership == 'VIP'){
     $membership_cost=5000+(5000*12/100);
+    $membership_value=5000;
    }
    elseif($membership == 'Gold'){
     $membership_cost=4000+(4000*12/100);
+    $membership_value=4000;
    }
    else{
     $membership_cost=3000+(3000*12/100);
+    $membership_value=3000;
    }
 
    return view("users.index", ["name_with_initial"=>$name_with_initial,'address'=>$new_address,
                                 'contact_no_type'=>$contact_no_type,
                              'international_mobile_number'=>$international_mobile_number,
                            'gender'=>$value['gender'],
-                            'membership_cost'=>$membership_cost]);
+                            'membership_cost'=>$membership_cost,
+                         'old_values'=>$value,'membership_value'=>$membership_value,
+                        'age'=>$age]);
 
 
 

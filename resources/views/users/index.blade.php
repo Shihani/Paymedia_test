@@ -24,6 +24,12 @@
 
   
      <div class="row">
+     <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong> Full NAme: {{$old_values['name']}}</strong>
+                
+        </div>
+        <br>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong> Name With intials: {{$name_with_initial}}</strong>
@@ -32,13 +38,19 @@
         <br>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Address: {{$address}}</strong>
+                <strong>Address: {{$old_values['address']}}</strong>
                 
         </div>
         <br>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Contact No Type: {{$contact_no_type}}</strong>
+                <strong>Reversed Address: {{$address}}</strong>
+                
+        </div>
+        <br>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Contact number in local format: {{$old_values['contact_no']}}</strong>
                 
         </div>
         <br>
@@ -50,13 +62,44 @@
         <br>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
+                <strong>Contact No Type: {{$contact_no_type}}</strong>
+                
+        </div>
+        <br>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>Gender: {{$gender}}</strong>
                 
         </div>
         <br>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Membership Cost: {{$membership_cost}}</strong>
+                <strong>Birthday: {{$old_values['birthdate']}}</strong>
+                
+        </div>
+        <br>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Age: {{$age}}</strong>
+                
+        </div>
+        <br>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>MemberShip type: {{$old_values['membership']}}</strong>
+                
+        </div>
+        <br>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>MemberShip value before tax: {{$membership_value}}</strong>
+                
+        </div>
+        <br>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Final Amount after calculation of tax: {{$membership_cost}}</strong>
                 
         </div>
         <br>
